@@ -1,0 +1,5 @@
+nimi = input("Palun sisestage nimi: ")
+l_kiirus = int(input("Palun sisestage lubatud kiirus: "))
+t_kiirus = int(input("Palun sisestage tegelik kiirus: "))
+trahvi_suurus = min(190,((int(t_kiirus) - int(l_kiirus))*3))
+print("Teie trahv on määratud " + str(trahvi_suurus) + " eurot.")
