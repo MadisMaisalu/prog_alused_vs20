@@ -2,12 +2,12 @@ vanus = int(input("Sisestage enda vanus: "))
 while vanus >= 150:    # vanuse limiidiks on 150
     vanus = int(input("Viga! Proovige uuesti: "))   # veateade kui on üle 150
 sugu = input("Sisestage enda sugu (Mees/Naine): ")
-while sugu != ("Mees" or "Naine"):  # veateade kui pole Mees või Naine !!!!SIIN ON MINGI VIGA!!!!! EI LASE VALIDA NAINE
+while (sugu !="Mees") or (sugu !="Naine"):  # veateade kui pole Mees või Naine !!!!SIIN ON MINGI VIGA!!!!! EI LASE VALIDA NAINE
     sugu = input("Viga! Proovige uuesti! Kasutage suurt esitähte (Mees/Naine): ")
 
 treening = input("Valge treeningtüüp: Tervisetreening, Põhivastupidavus, Intensiivne ")
-while treening != ("Tervisetreening" or "Põhivastupidavus" or "Intensiivne"):
-    treening = input("Viga! Valige treeningtüüp(Tõstutundlik): Tervisetreening, Põhivastupidavus, Intensiivne ")
+while treening != "Tervisetreening" or treening != "Põhivastupidavus" or treening != "Intensiivne":
+    treening = input("Viga! Valige treeningtüüp(Tõstutundlik): Tervisetreening, Põhivastupidavus, Intensiivne ") # ainult tervisetreening töötab
 
 # mehed
 
