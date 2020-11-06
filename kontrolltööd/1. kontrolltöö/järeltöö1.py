@@ -15,7 +15,6 @@ sammude_arv_paevas=[]  # list kuhu tulevad sammude päevased arvud
 
 for x in range(7):  # 7 korda genereerib - 7 nädalapäeva
     sammude_arv_paevas.append(random.randrange(5000, 15000)) #lisab need listi sammude_arv_paevas
-    print(sammude_arv_paevas)
 
 nadal=0
 uks_paev=0  # tekitan muutujad
@@ -24,7 +23,7 @@ for y in range(len(sammude_arv_paevas)):  # leian päeva ja nädalaga läbitud k
     print(str(uks_paev) + "km")
     nadal+=uks_paev
 
-print("Kõndisite nädalaga " + str(nadal) + "km, ning tegite keskmiselt " + str(sum(sammude_arv_paevas)/7))
+print("Kõndisite nädalaga " + str(nadal) + "km, ning tegite keskmiselt " + str(round(sum(sammude_arv_paevas)/7)) + " sammu.")
   #  väljastan väärtused
 if sum(sammude_arv_paevas)/7 < 10000:
     print("Peate järgmine nädal rohkem kõndima!")
